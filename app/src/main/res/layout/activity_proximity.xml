@@ -1,0 +1,20 @@
+<LinearLayout android:id="@+id/proxLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/proximity_transition"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/proxText"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Place something near your phone's proximity sensor"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>

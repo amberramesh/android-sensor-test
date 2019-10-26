@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moonc.testsensors">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sensor_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/sensor_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Accelerometer" />
+        <activity android:name=".AmbientTemperature" />
+        <activity android:name=".MagneticField" />
+        <activity android:name=".Gyroscope" />
+        <activity android:name=".HeartRate" />
+        <activity android:name=".Light" />
+        <activity android:name=".Proximity" />
+        <activity android:name=".Pressure" />
+        <activity android:name=".RelativeHumidity"></activity>
+    </application>
+
+</manifest>

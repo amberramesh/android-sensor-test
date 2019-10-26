@@ -1,0 +1,65 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:text="Press and hold your finger over the heart rate sensor" />
+
+    <TextView
+        android:id="@+id/heartText"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:text="Finger Not Set" />
+
+    <ProgressBar
+        android:id="@+id/heartBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80dp"
+        android:minHeight="15dp"
+        android:max="30"
+        android:min="0"
+        android:progress="1"
+        android:indeterminate="false"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+       <Button
+           android:layout_margin="10dp"
+           android:id="@+id/heartStart"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button_rd"
+           android:text="Start"
+           android:layout_weight="50" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/heartReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rd"
+            android:text="Reset"
+            android:layout_weight="50" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20sp"
+    android:background="#083045"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:text="Test a sensor by selecting one below" />
+
+    <Spinner
+        android:layout_margin="10dp"
+        android:id="@+id/selectSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/spinner_rd" />
+
+    <Button
+        android:id="@+id/submitSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Sensor"
+        android:textSize="16sp"
+        android:padding="18dp"
+        android:textColor="#0F0F0F"
+        android:background="@drawable/button_rd"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#F0F0F0"
+        android:text="Ambient Air Pressure" />
+
+    <TextView
+        android:id="@+id/presText"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:text="Pressure" />
+
+</LinearLayout>
